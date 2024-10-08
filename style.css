@@ -1,0 +1,380 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI';
+}
+
+.wrapper{
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+}
+
+.header{
+  width: 100%;
+  padding: 5px 3%;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #353535;
+}
+
+.logo_wrapper{
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+.logo{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-image: url(./Mic_Star_Images/Logo.JPG);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.logo_wrapper p{
+  padding: 0;
+  color: #d8d8d8;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.search_container{
+    width: 27%;
+    height: 35px;
+    background-color: #292929;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    padding: 0px 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.search_container i{
+  color: #f39e00;
+  cursor: pointer;
+}
+
+#search{
+  padding: 0px 17px;
+  font-size: 15px;
+  font-weight: 600;
+  flex: 1;
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: transparent;
+}
+#search::placeholder{
+color: #b4b4b4;
+}
+
+.navbar{
+  width: 20%;
+  margin-right: 20px;
+  /* background-color: red; */
+}
+
+.navlinks{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navlinks li{
+  list-style-type: none;
+}
+
+.navlinks li a{
+  text-decoration: none;
+  font-size: 14.5px;
+  font-weight: bold;
+  color: #d8d8d8;
+  transition: .3s;
+}
+
+.navlinks li a:hover{
+  color: #f39e00;
+}
+
+.account{
+  width: 14%;
+  height: 40px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.account li{
+list-style-type: none;
+font-size: 18px;
+font-weight: bold;
+}
+
+.account li a{
+text-decoration: none;
+color: #fff;
+font-size: 16px;
+font-weight: bold;
+transition: .3s;
+}
+
+.account li a:hover{
+  color: #f39e00;
+}
+
+.slash{
+  color: #f39e00;
+  cursor: pointer;
+}
+
+.subscribe_btn{
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #242424;
+  color: #d8d8d8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  border: none;
+  border-radius: 30px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.subscribe_btn i{
+  color: #f39e00;
+}
+
+.subscribe_btn:hover{
+  background-color: #181818;
+}
+
+.hero{
+  width: 93%;
+  margin: 25px auto;
+  background-color: #111111;
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #353535;
+}
+
+.hero_content{
+  width: 45%;
+  padding-top: 35px;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.empower_span{
+  color: #d18800f8;
+}
+
+.hero_content h1{
+  text-align: center;
+  color: #c9c9c9;
+  margin-bottom: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  
+}
+
+.hero_content p{
+  line-height: 25px;
+  /* text-align: center; */
+  margin: 0 auto;
+  font-size: 18px;
+  color: #c4c4c4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero_content_cta{
+  width: fit-content;
+  margin: 25px auto;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: transparent;
+  color: #c9c9c9;
+  border: 1px solid #d18800f8;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.hero_img{
+  width: 45%;
+  height: 360px;
+  border-radius: 10px;
+}
+
+.hero_image{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  opacity: .8;
+}
+
+.sidebar_playlist_container{
+  width: 100%;
+  padding: 20px 3%;
+  margin-top: 40px;
+  background-color: #030303f6;
+  /* background-color: red; */
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.sidebar_container{
+  width: 20%;
+  height: 100%;
+  padding-left: 3%;
+  padding-top: 2%;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  overflow: scroll;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.sidebar_box{
+  width: 100%;
+  border-bottom: 1px solid #353535;
+  padding: 5px 0px;
+  /* background-color: red; */
+}
+
+.sidebar_box h2{
+  color: #d18800f8;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.playlist_container{
+  width: 75%;
+  height: 100%;
+  /* background-color: orange; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.songs{
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: red; */
+  color: #c4c4c4;
+}
+
+.songs h3{
+  color: #d18800f8;
+}
+
+.trending_songs_container{
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: yellow; */
+  overflow: hidden;
+}
+
+.artists_card_list{
+  width: 23%;
+  height: 210px;
+  position: relative;
+  cursor: pointer;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+li i{
+  margin-right: 8px;
+  color: #c4c4c4;
+  cursor: pointer;
+}
+
+li{
+  list-style: none;
+  line-height: 40px;
+}
+
+li a{
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #c4c4c4;
+}
+
+.artists_card_overlay{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border-radius: 8px;
+  transition: .8s;
+  z-index: 10;
+}
+
+.artists_card_overlay:hover{
+  background-color: #000000;
+  opacity: .5;
+}
+
+.artists_card_overlay i{
+  font-size: 35px;
+  font-weight: bold;
+  display: none;
+  color: #b67600;
+  align-self: flex-end;
+  margin: 0px 20px 20px 0px;
+  z-index: 50;
+}
+
+.artists_card_overlay:hover i{
+  display: block;
+  transition: .8s;
+} 
+
